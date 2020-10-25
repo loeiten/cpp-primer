@@ -1,5 +1,6 @@
 #include <cctype>
 #include <iostream>
+#include <string>
 
 using std::cin;
 using std::cout;
@@ -10,7 +11,7 @@ int main() {
   string s;
   cout << "I will turn your string to capitals, then x's. Enter a string"
        << endl;
-  getline(cin, s);
+  std::getline(cin, s);
   cout << "You entered:\n" << s << endl;
   decltype(s.size()) l = 0;
   while (l < s.size()) {
@@ -24,7 +25,7 @@ int main() {
   }
   cout << "I turned it into\n" << s << endl;
   for (decltype(s.size()) i = 0; i < s.size(); ++i) {
-    if (isalnum(s[i])) {
+    if (std::isalnum(s[i])) {
       s[i] = 'X';
     }
   }

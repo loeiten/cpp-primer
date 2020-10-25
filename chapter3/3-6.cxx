@@ -1,5 +1,6 @@
 #include <cctype>
 #include <iostream>
+#include <string>
 
 using std::cin;
 using std::cout;
@@ -9,10 +10,10 @@ using std::string;
 int main() {
   string s;
   cout << "I will turn your string to x's. Enter a string" << endl;
-  getline(cin, s);
+  std::getline(cin, s);
   cout << "You entered:\n" << s << endl;
   for (auto &c : s) {
-    if (isalnum(c)) {
+    if (std::isalnum(c)) {
       c = 'X';
     }
   }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using std::cin;
 using std::cout;
@@ -8,8 +9,8 @@ using std::string;
 int main() {
   string l1, l2;
   cout << "Write two strings (end with newline):" << endl;
-  getline(cin, l1);
-  getline(cin, l2);
+  std::getline(cin, l1);
+  std::getline(cin, l2);
   cout << endl;
 
   cout << "You wrote:" << endl;

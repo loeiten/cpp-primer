@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using std::cin;
 using std::cout;
@@ -16,7 +17,7 @@ int main() {
     cout << "Enter a string:" << endl;
   }
   cout << "Enter a string:" << endl;
-  while (getline(cin, in_line)) {
+  while (std::getline(cin, in_line)) {
     if (in_line == "stop") {
       break;
     }
