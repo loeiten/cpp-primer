@@ -2,11 +2,11 @@
 using std::cout;
 using std::endl;
 
-int* getPtr(const int& i) { return &i; }
+int* getPtr(int* i) { return i; }
 
 int main() {
   int ival = 42;
-  int* pi = getPtr(ival);
+  int* pi = getPtr(&ival);
 
   cout << ival << endl;
   cout << *pi << endl;
@@ -19,8 +19,8 @@ int main() {
   int* pi2;
   // NOTE: We are checking if this is not the null pointer, not that the value
   // is 0
-  if ((pi2 = getPtr(ival)) != 0) {
-    cout << "getPtr(ival)) != 0" << endl;
+  if ((pi2 = getPtr(&ival)) != 0) {
+    cout << "getPtr(&ival)) != 0" << endl;
     cout << "*pi2 = " << *pi2 << endl;
   }
 
