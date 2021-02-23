@@ -34,3 +34,8 @@ to `settings.json`
 
 - Problem: Need to save manually
 - Solution: `File` -> `Auto save`
+
+## Issues with valgrind
+
+[Installation](https://github.com/LouisBrunner/valgrind-macos)
+[Suppression file](https://stackoverflow.com/questions/36893494/valgrind-shows-memory-leak-with-empty-main-without-including-headers)
