@@ -48,5 +48,5 @@
 data/
 GCC_4_7_0/
 .DS_Store
-my.suppression
+my.suppressions
 min.cxx

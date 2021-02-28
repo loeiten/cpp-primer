@@ -12,7 +12,7 @@ using std::vector;
 int main() {
   vector<int> foo;
   try {
-    cout << foo.at(0) << endl;
+    cout << foo.at(0) << endl;  // cppcheck-suppress containerOutOfBounds
   } catch (const exception& e) {
     cerr << "Caugth error: e.what()=" << e.what() << '\n';
   }

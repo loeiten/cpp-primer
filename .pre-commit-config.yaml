@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v3.4.0
     hooks:
     -   id: check-yaml
     -   id: end-of-file-fixer
@@ -14,3 +14,4 @@ repos:
     -   id: cpplint
         args: ["--filter=-legal/copyright"]
     -   id: cppcheck
+        args: ["--inline-suppr"]

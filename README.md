@@ -21,7 +21,7 @@ clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2 
 
 ```sh
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 ```
 
 and add
@@ -30,7 +30,7 @@ and add
 "terminal.integrated.fontFamily": "Hack Nerd Font"
 ```
 
-to `settings.json`
+to `settings.json` (<kbd>CMD⌘</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd> -> `Open Settings (JSON)`)
 
 - Problem: Need to save manually
 - Solution: `File` -> `Auto save`
