@@ -23,10 +23,9 @@ void print_pass_or_fail_if_esle(vector<int>* vec) {
 void print_pass_or_fail_conditional(vector<int>* vec) {
   for (auto i = vec->begin(); i != vec->end(); i++) {
     cout << *i << " - ";
-    cout << ((*i < 60)    ? "fail"
-             : (*i <= 75) ? "low pass"
-             : (*i <= 90) ? "pass"
-                          : "high pass")
+    cout << ((*i < 60)
+                 ? "fail"
+                 : (*i <= 75) ? "low pass" : (*i <= 90) ? "pass" : "high pass")
          << endl;
   }
 }
