@@ -9,11 +9,13 @@ using std::endl;
 Compile instructions
 
 clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2
--Wundef -Wconversion -g3 -Os -c 6-9.cxx clang++ -std=c++14 -Wall -Wextra -Werror
--Wshadow -Wdouble-promotion -Wformat=2 -Wundef -Wconversion -g3 -Os -c
-factorial.cxx clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow
--Wdouble-promotion -Wformat=2 -Wundef -Wconversion -g3 -Os  factorial.o 6-9.o -o
-6-9
+-Wundef -Wconversion -g3 -Os -c 6-9.cxx
+
+clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2
+-Wundef -Wconversion -g3 -Os -c factorial.cxx
+
+clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2
+-Wundef -Wconversion -g3 -Os factorial.o 6-9.o -o 6-9
 */
 int main() {
   int i;

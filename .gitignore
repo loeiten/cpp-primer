@@ -50,3 +50,4 @@ GCC_4_7_0/
 .DS_Store
 my.suppressions
 min.cxx
+build/

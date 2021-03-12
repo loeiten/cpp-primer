@@ -14,7 +14,13 @@ clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2 
 ## Issues with setting up Visual studio code
 
 - Problem: `python` pointing at `/usr/bin/python`
-- Solution: The `conda` way of exporting the path in `.zshrc` may not work
+- Solution: The `conda` way of exporting the path in `.zshrc` may not work. Add the [following](https://stackoverflow.com/a/55043991/2786884) to the user settings
+
+   ```json
+   "terminal.integrated.env.osx": {
+        "PATH": ""
+   }
+   ```
 
 - Problem: The symbols are missing from the powerline
 - Solution: Use [`nerd-font`](https://github.com/ryanoasis/nerd-fonts/#option-3-install-script) as explained [here](https://gist.github.com/480/3b41f449686a089f34edb45d00672f28)
