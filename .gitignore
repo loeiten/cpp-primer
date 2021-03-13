@@ -51,3 +51,4 @@ GCC_4_7_0/
 my.suppressions
 min.cxx
 build/
+.vscode/settings.json

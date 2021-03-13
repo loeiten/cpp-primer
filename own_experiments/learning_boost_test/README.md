@@ -59,6 +59,9 @@ clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2 
 ```
 
 ### Troubleshooting
+
+#### Compile errors
+
 In certain versions the extra check flags seems to trigger `[-Werror,-Wundef]` and `[-Werror,-Wsign-conversion]`.
 
 A dirty hack for `[-Werror,-Wundef]` is found [in this issue](https://github.com/boostorg/config/issues/322).
@@ -73,3 +76,21 @@ A dirty hack for the other errors is to add
 ```
 
 with `"-Wtheerror"` being the error around the line of issue.
+
+#### `vsc` cannot find `<boost/test/unit_test.hpp>`
+
+Add the following to `.vscode/c_cpp_properties.json` (this file is usually automatically made when you agree to update `includePath` in the `vsc` pop-up)
+
+```json
+{
+    "configurations": [
+        {
+            "includePath": [
+                "/path/to/boost/include/**"
+            ],
+        }
+    ],
+}
+```
+
+In my case `/path/to/boost/include/**` is `/usr/local/Cellar/boost/1.75.0_2/include/**`

@@ -1,6 +1,9 @@
 # cpp-primer
 
 This is a repo only meant for personal use.
+
+See also source code for [extended examples](http://www.informit.com/title/032174113)
+
 For anyone interested in the proper solution to all exercises, [`jaege`](https://github.com/jaege/Cpp-Primer-5th-Exercises)s solution are recommended
 
 ## Compiling

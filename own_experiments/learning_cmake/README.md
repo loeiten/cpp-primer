@@ -1,5 +1,6 @@
 # Learning CMake
 
+- Aakash Mallik tells us how to organize code in [part1](https://medium.com/heuristics/c-application-development-part-1-project-structure-454b00f9eddc), [part2](https://medium.com/heuristics/c-application-development-part-2-cmakelists-txt-e415b5b387dc) and [part3](https://medium.com/heuristics/c-application-development-part-3-cmakelists-txt-from-scratch-7678253e5e24)
 - [Explanatory CMake toturial](https://www.cs.swarthmore.edu/~adanner/tips/cmake.php)
 - [Official CMake tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
 - [Example repository](https://github.com/albertchan/cmake-boost-demo)
