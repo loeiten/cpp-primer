@@ -31,7 +31,7 @@ If you get any errors, see [Troubleshooting](#Troubleshooting) below.
 One need to specify the path to the library when compiling as explained [here](https://cppsecrets.com/users/14249710697121115114971069748525564103109971051084699111109/C00-BoostTest.php)
 
 ```sh
-clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2 -Wundef -Wconversion -g3 -Os test_stand_alone.cxx /path/to/libboost_unit_test_framework.a  -o test_stand_alone && ./test_stand_alone
+clang++ -std=c++14 -Wall -Wextra -Werror -Wshadow -Wdouble-promotion -Wformat=2 -Wundef -Wconversion -g3 -Os test_stand_alone.cxx /path/to/libboost_unit_test_framework.a -o test_stand_alone && ./test_stand_alone
 ```
 
 In my case `/path/to/libboost_unit_test_framework.a` is `/usr/local/lib/libboost_unit_test_framework.a`
